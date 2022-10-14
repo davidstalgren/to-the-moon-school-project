@@ -2,3 +2,16 @@
 	box-sizing: border-box;
 }
 
+.astronaut_page{
+    min-height: 100vh;
+    background-image: url("../images/astronaut_bg.jpg"); /* <-------2 punkter som var viktiga*/
+    Background-size: cover; 
+    Background-position: center;
+}
+
+.space_page{
+    min-height: 100vh;
+    background-image: url("../images/space_bg.jpg");
+    Background-size: cover; 
+    Background-position: center;
+}
