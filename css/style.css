@@ -5,6 +5,11 @@
 body{
     margin: 0;
 }
+
+.menu_text{
+display: none;
+}
+
 .astronaut_page{
     min-height: 100vh;
     background-image: url("../images/astronaut_bg.jpg"); /* <-------2 punkter som var viktiga*/
@@ -14,23 +19,46 @@ body{
 
 .to_the_moon{
     position: absolute;
-    top: 80px;
+    top: 70px;
     left: 50px;
-    height: 25%;
+    height: 26%;
     width: 40%;
     border: 4px solid black;
+    font-family: Rubik;
+}
+
+.heading_frontpage{
+    border: 1px solid black;
+    position: relative;
+    top: 5px;
+    margin: 0px;
+    text-align: center;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    
+}
+
+.text_frontpage{
+    border: 1px solid black;
+    position: relative;
+    bottom: 0px;
+    left:0px;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    font-size: 0.8rem;
 }
 
 nav {
     text-align: right;
-    position: absolute;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
   }
 
 button {
-    position: relative;
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 50px;
@@ -54,4 +82,6 @@ button {
     background-image: url("../images/space_bg.jpg");
     Background-size: cover; 
     Background-position: center;
+    font-family: Rubik;
+    color: white;
 }
