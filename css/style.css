@@ -9,6 +9,15 @@
     Background-position: center;
 }
 
+.to_the_moon{
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    height: 25%;
+    width: 40%;
+    border: 4px solid black;
+}
+
 .space_page{
     min-height: 100vh;
     background-image: url("../images/space_bg.jpg");
