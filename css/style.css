@@ -28,7 +28,7 @@ body{
 }
 
 .heading_frontpage{
-    border: 1px solid black;
+    outline: 1px solid black;
     position: relative;
     top: 5px;
     margin: 0px;
@@ -40,7 +40,7 @@ body{
 }
 
 .text_frontpage{
-    border: 1px solid black;
+    outline: 1px solid black;
     position: absolute;
     bottom: 0px;
     right: 10px;
@@ -48,6 +48,8 @@ body{
     padding: 5px;
     text-align: left;
     font-size: 0.8rem;
+    text-decoration: none;
+    color: black;
 }
 
 nav {
@@ -92,6 +94,10 @@ button {
     padding: 0;
 }
 
+h2{
+    margin: 0;
+}
+
 .picture_major_tom{
     display: none;
     width: 75px;
@@ -100,6 +106,15 @@ button {
 @media screen and (min-width: 1024px) {
     .space_page{
         display: flex;
-        gap: 50px
+        gap: 50px;
+    }
+
+    .left_side_desktop, .right_side_desktop{
+        width: 50%;
+    }
+        
+    .picture_major_tom{
+        display: inline;
+        width: 75px;
     }
 }
