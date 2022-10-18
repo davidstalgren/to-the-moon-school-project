@@ -35,16 +35,17 @@ body{
     text-align: center;
     font-size: 2.5rem;
     text-transform: uppercase;
-    font-family: Rubik;  
+    font-family: Rubik;
+    font-weight: 700;
 }
 
 .text_frontpage{
     border: 1px solid black;
-    position: relative;
+    position: absolute;
     bottom: 0px;
-    left:0px;
+    right: 10px;
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
     text-align: left;
     font-size: 0.8rem;
 }
@@ -84,4 +85,21 @@ button {
     Background-position: center;
     font-family: Rubik;
     color: white;
+}
+
+.heading_second_page{
+    margin: 0;
+    padding: 0;
+}
+
+.picture_major_tom{
+    display: none;
+    width: 75px;
+}
+
+@media screen and (min-width: 1024px) {
+    .space_page{
+        display: flex;
+        gap: 50px
+    }
 }
