@@ -28,19 +28,20 @@ body{
 }
 
 .heading_frontpage{
-    outline: 1px solid black;
     position: relative;
     top: 5px;
     margin: 0px;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    line-height: 1;
     text-transform: uppercase;
     font-family: Rubik;
     font-weight: 700;
+    padding-left:5px;
+    padding-right:5px;
 }
 
 .text_frontpage{
-    outline: 1px solid black;
     position: absolute;
     bottom: 0px;
     right: 10px;
@@ -80,6 +81,16 @@ button {
     border-radius: 4px;
 }
 
+button span:nth-child(2) {
+    left: -6px;
+    position: relative;
+    transition: left 0.3s ease-in-out;
+  }
+  
+  button:hover span:nth-child(2) {
+    left: 0;
+  }
+
 .space_page{
     min-height: 100vh;
     background-image: url("../images/space_bg.jpg");
@@ -87,6 +98,9 @@ button {
     Background-position: center;
     font-family: Rubik;
     color: white;
+    padding-top:45px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .heading_second_page{
@@ -96,6 +110,38 @@ button {
 
 h2{
     margin: 0;
+    max-height: 100px;
+}
+
+.heading_space{
+    display:block;
+    position:relative;
+    font-size:4rem;
+    text-shadow: 2px 2px rgb(51, 44, 44);
+    z-index:1;
+}
+
+.heading_ventures{
+    color:rgb(209, 201, 201);
+    position:relative;
+    top: -50px;
+    left: 70px;
+    font-family:'Times New Roman', Times, serif;
+    font-size:4.25rem;
+    font-weight: 800;
+    z-index:0;
+}
+
+.heading_major_tom{
+    font-size:1.5rem;
+}
+
+.text_major_tom{
+    font-size:0.75rem;
+}
+
+.text_tin_can{
+    font-size:0.75rem;
 }
 
 .picture_major_tom{
