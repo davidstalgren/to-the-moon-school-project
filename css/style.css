@@ -200,15 +200,49 @@ h2{
 .text_major_tom_p2{
     display:inline;
 }
-
+/*
 blockquote{
     position:relative;
     left:-15px;
     padding:15px;
     font-size:1.15rem;
     font-style:italic;
+    font-weight: lighter; 
+}*/
+
+.quote1 {
+    width: 80%;
+    position: relative;
+    margin: 25px;
+    font-size: 1.0rem;
+    color: white;
     font-weight: lighter;
-}
+    font-style: italic;
+  }
+  
+  .quote1::before { 
+    content: open-quote;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    opacity: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:absolute;
+    margin-left: -1rem;
+    top: -1rem;
+  } 
+  
+  .quote1::after { 
+    content: close-quote;
+    font-weight: bold;
+    font-size: 3rem;
+    color: white;
+    opacity: 30%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position:absolute;
+    margin-left: -1rem;
+    top: 1.5rem;
+  }
 
 .quote2{
     display:none;
