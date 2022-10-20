@@ -23,10 +23,10 @@ body{
 
 .to_the_moon{
     position: absolute;
-    top: 70px;
-    left: 50px;
-    height: 26%;
-    width: 40%;
+    top: 80px;
+    left: 55px;
+    height: 200px;
+    width: 175px;
     border: 4px solid black;
     font-family: Rubik;
 }
@@ -36,25 +36,29 @@ body{
     top: 5px;
     margin: 0px;
     text-align: center;
-    font-size: 2.8rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.25;
     text-transform: uppercase;
     font-family: Rubik;
     font-weight: 700;
-    padding-left:5px;
-    padding-right:5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .text_frontpage{
-    position: absolute;
-    bottom: 0px;
-    right: 10px;
+    position: relative;
+    bottom: -15px;
+    right: -5px;
     margin: 0px;
     padding: 5px;
     text-align: left;
     font-size: 0.8rem;
     text-decoration: none;
     color: black;
+}
+
+.br_after_the_heading{
+    display: none;
 }
 
 nav {
@@ -101,7 +105,6 @@ button:hover span:nth-child(2) {
     left:50%;
     width: 50px;
     height: 50px;
-
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -134,8 +137,8 @@ button:hover span:nth-child(2) {
 
 .arrow_bottom_text{
     display: none;
-    
 }
+
 .space_page{
     min-height: 100vh;
     background-image: url("../images/space_bg.jpg");
@@ -161,32 +164,81 @@ h2{
 .heading_space{
     display:block;
     position:relative;
-    font-size:4rem;
+    font-size:3.6rem;
     text-shadow: 2px 2px rgb(51, 44, 44);
     z-index:1;
 }
 
 .heading_ventures{
-    color:rgb(209, 201, 201);
+    color:rgba(209, 201, 201, 0.795);
     position:relative;
     top: -50px;
-    left: 70px;
+    left: 55px;
     font-family:'Times New Roman', Times, serif;
-    font-size:4.25rem;
+    font-size:4.7rem;
     font-weight: 800;
     z-index:0;
 }
 
 .heading_major_tom{
-    font-size:1.5rem;
+    position:relative;
+    top:20px;
+    font-size:1.4rem;
+    padding-bottom: 10px;
 }
 
 .text_major_tom{
-    font-size:0.75rem;
+    font-size:0.7rem;
+    font-weight: lighter;
+    line-height: 1.3;
+}
+
+.text_major_tom_p1{
+    display:inline;
+}
+
+.text_major_tom_p2{
+    display:inline;
+}
+
+blockquote{
+    position:relative;
+    left:-15px;
+    padding:15px;
+    font-size:1.15rem;
+    font-style:italic;
+    font-weight: lighter;
+}
+
+.quote2{
+    display:none;
 }
 
 .text_tin_can{
-    font-size:0.75rem;
+    font-size:0.7rem;
+    font-weight: lighter;
+    line-height: 1.3;
+}
+
+.text_tin_can_p1{    
+    display:inline;
+    padding-bottom:20px;
+}
+
+.text_tin_can_p2{    
+    display:inline;
+}
+
+.text_tin_can_p3{    
+    display:inline;
+}
+
+.text_tin_can_p4{    
+    display:inline;
+}
+
+.text_tin_can_p5{    
+    display:inline;
 }
 
 .picture_major_tom{
@@ -194,8 +246,55 @@ h2{
     width: 75px;
 }
 
+.read_more_about_major_tom{
+    color: rgb(209, 0, 161);
+    text-decoration-color: rgb(209, 0, 161);
+}
+
 @media screen and (min-width: 1024px) {
-        .space_page{
+
+    .to_the_moon{
+        position: absolute;
+        top: 70px;
+        left: 75px;
+        height: 340px;
+        width: 340px;
+        border: 4px solid black;
+        font-family: Rubik;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    
+    .heading_frontpage{
+        position: relative;
+        top: 60px;
+        margin: 0px;
+        text-align: center;
+        font-size: 5rem;
+        line-height: 1.25;
+        text-transform: uppercase;
+        font-family: Rubik;
+        font-weight: 700;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    .text_frontpage{
+        position: relative;
+        bottom: -100px;
+        right: -200px;
+        margin: 0px;
+        padding: 5px;
+        text-align: right;
+        font-size: 0.90rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    .br_after_to_heading{
+        display: none;
+    }
+
+    .space_page{
         display: flex;
         gap: 200px;        
         min-height: 100vh;
@@ -207,6 +306,10 @@ h2{
         padding-top:45px;
         padding-left: 60px;
         padding-right: 60px;
+    }
+
+    .arrow {
+        display: none;
     }
 
     .left_side_desktop, .right_side_desktop{
@@ -226,7 +329,7 @@ h2{
     .heading_space{
         display:block;
         position:relative;
-        font-size:5.5rem;
+        font-size: 5.25rem;
         text-shadow: 2px 2px rgb(51, 44, 44);
         z-index:1;
     }
