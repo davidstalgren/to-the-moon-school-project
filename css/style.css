@@ -87,7 +87,7 @@ button span:nth-child(2) {
     transition: left 0.3s ease-in-out;
   }
   
-  button:hover span:nth-child(2) {
+button:hover span:nth-child(2) {
     left: 0;
   }
 
@@ -150,9 +150,18 @@ h2{
 }
 
 @media screen and (min-width: 1024px) {
-    .space_page{
+        .space_page{
         display: flex;
-        gap: 50px;
+        gap: 200px;        
+        min-height: 100vh;
+        background-image: url("../images/space_bg_desktop.jpg");
+        Background-size: cover; 
+        Background-position: center;
+        font-family: Rubik;
+        color: white;
+        padding-top:45px;
+        padding-left: 60px;
+        padding-right: 60px;
     }
 
     .left_side_desktop, .right_side_desktop{
@@ -162,5 +171,29 @@ h2{
     .picture_major_tom{
         display: inline;
         width: 75px;
+    }
+
+    h2{
+        margin: 0;
+        max-height: 150px;
+    }
+
+    .heading_space{
+        display:block;
+        position:relative;
+        font-size:5.5rem;
+        text-shadow: 2px 2px rgb(51, 44, 44);
+        z-index:1;
+    }
+    
+    .heading_ventures{
+        color:rgb(209, 201, 201);
+        position:relative;
+        top: -60px;
+        left: 5px;
+        font-family:'Times New Roman', Times, serif;
+        font-size:7rem;
+        font-weight: 800;
+        z-index:0;
     }
 }
