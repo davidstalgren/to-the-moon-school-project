@@ -1,5 +1,13 @@
 @media screen and (min-width: 1024px) {
 
+    li{
+        display:block;
+        font-size: 4rem;
+        font-weight:700;
+        text-shadow: 0px 5px 1px rgb(189, 189, 189);
+    
+    }
+    
     .to_the_moon{
         position: absolute;
         top: 70px;
@@ -63,11 +71,6 @@
         width: 50%;
     }
         
-    .picture_major_tom{
-        display: inline;
-        width: 75px;
-    }
-
     h2{
         margin: 0;
         max-height: 150px;
@@ -148,6 +151,9 @@
       }
 
     .quote2 {
+        position: relative;
+        top:40px;
+        left:-15px;
         display:block;
         font-size: 2.3rem;
         font-style: italic;
@@ -158,5 +164,49 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
+    }
+    .text_tin_can{
+        position:relative;
+        top:60px;
+        font-size:1rem;
+        font-weight: lighter;
+        line-height: 1.5;
+    }
+    
+    .text_tin_can_p1{    
+        display:inline;
+        padding-bottom:20px;
+    }
+    
+    .text_tin_can_p2{    
+        display:inline;
+    }
+    
+    .text_tin_can_p3{    
+        display:inline;
+    }
+    
+    .text_tin_can_p4{    
+        display:inline;
+    }
+    
+    .text_tin_can_p5{    
+        display:inline;
+    }
+    
+    .picture_major_tom{
+        display: inline;
+        float: right;
+        transform: rotate(5deg);
+        width: 100px;
+    }
+
+    .text_tin_can_br{
+        display:none;
+    }
+
+    .read_more_about_major_tom{
+        color: rgb(209, 0, 161);
+        text-decoration-color: rgb(209, 0, 161);
     }
 }
