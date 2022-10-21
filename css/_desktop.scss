@@ -91,4 +91,72 @@
         font-weight: 800;
         z-index:0;
     }
+
+    .heading_major_tom{
+        position:relative;
+        top:20px;
+        font-size:1.8rem;
+        padding-bottom: 10px;
+    }
+    
+    .text_major_tom {
+        font-size:1rem;
+        font-weight: lighter;
+        line-height: 1.5;
+    }
+
+    .text_major_tom_p1 {
+        display:inline;
+    }
+    
+    .text_major_tom_p2 {
+        display:inline;
+    }
+
+    .quote1 {
+        position: relative;
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.75rem;
+        color: white;
+        font-weight: lighter;
+        font-style: italic;
+      }
+      
+      .quote1::before { 
+        content: open-quote;
+        font-weight: bold;
+        font-size: 3rem;
+        color: white;
+        opacity: 0.3;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position:absolute;
+        margin-left: -1rem;
+        top: -1rem;
+      } 
+      
+      .quote1::after { 
+        content: close-quote;
+        font-weight: bold;
+        font-size: 3rem;
+        color: white;
+        opacity: 0.3;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        position:absolute;
+        margin-left: -1rem;
+        top: 5.5rem;
+      }
+
+    .quote2 {
+        display:block;
+        font-size: 2.3rem;
+        font-style: italic;
+        font-weight: lighter;
+        opacity: 0.3;
+        background: #D100A1;
+        background: linear-gradient(to bottom right, #D100A1 0%, #BABABA 50%, #D100A1 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
 }

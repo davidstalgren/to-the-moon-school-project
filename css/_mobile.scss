@@ -10,6 +10,30 @@ body{
     margin: 0;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 100vw;
+    height: 100vh;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    visibility: hidden;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100%;
+    text-transform: uppercase;
+    margin:0;
+    padding:0;
+}
+
 .menu_text{
     display: none;
 }
@@ -23,6 +47,7 @@ body{
 
 .to_the_moon{
     position: absolute;
+    z-index: 3;
     top: 80px;
     left: 55px;
     height: 200px;
@@ -61,23 +86,17 @@ body{
     display: none;
 }
 
-nav {
-    text-align: right;
-    position: relative;
-    width: 100%;
-    top: 0;
-    left: 0;
-  }
-
 button {
     position: absolute;
     top: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
+    z-index: 5;
     background-color: transparent;
     border: 0;
     cursor: pointer;
+    pointer-events: none;
 }
 
 .menu_lines {
@@ -95,12 +114,42 @@ button span:nth-child(2) {
     transition: left 0.3s ease-in-out;
   }
   
-button:hover span:nth-child(2) {
+input:hover + .menu button span:nth-child(2) {
     left: 0;
   }
 
-input:checked + button span:nth-child(2) {
+input {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 4;
+    opacity: 0;
+}
 
+input:checked + .menu button span {
+    position:absolute;
+    transition: all 0.3s ease-in-out;
+    left: 0px;
+    top: 20px;
+}
+
+input:checked + .menu button span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+input:checked + .menu button span:nth-child(2) {
+    opacity: 0;
+}
+
+input:checked + .menu button span:nth-child(4) {
+    transform: rotate(-45deg);
+}
+
+input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
 }
 
 .arrow {
@@ -109,7 +158,7 @@ input:checked + button span:nth-child(2) {
     left:50%;
     width: 50px;
     height: 50px;
-    background-color: yellow;
+    background-color: transparent;
     border: 0;
     cursor: pointer;
 }
@@ -204,15 +253,6 @@ h2{
 .text_major_tom_p2{
     display:inline;
 }
-/*
-blockquote{
-    position:relative;
-    left:-15px;
-    padding:15px;
-    font-size:1.15rem;
-    font-style:italic;
-    font-weight: lighter; 
-}*/
 
 .quote1 {
     position: relative;
@@ -229,7 +269,7 @@ blockquote{
     font-weight: bold;
     font-size: 3rem;
     color: white;
-    opacity: 30%;
+    opacity: 0.3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     position:absolute;
     margin-left: -1rem;
@@ -241,7 +281,7 @@ blockquote{
     font-weight: bold;
     font-size: 3rem;
     color: white;
-    opacity: 30%;
+    opacity: 0.3;
     font-family: Georgia, 'Times New Roman', Times, serif;
     position:absolute;
     margin-left: -1rem;
