@@ -1,4 +1,4 @@
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px){
 
     li{
         display:block;
@@ -63,7 +63,7 @@
         padding-right: 60px;
     }
 
-    .arrow {
+    .arrow{
         display: none;
     }
 
@@ -102,21 +102,21 @@
         padding-bottom: 10px;
     }
     
-    .text_major_tom {
+    .text_major_tom{
         font-size:1rem;
         font-weight: lighter;
         line-height: 1.5;
     }
 
-    .text_major_tom_p1 {
+    .text_major_tom_p1{
         display:inline;
     }
     
-    .text_major_tom_p2 {
+    .text_major_tom_p2{
         display:inline;
     }
 
-    .quote1 {
+    .quote1{
         position: relative;
         margin-left: 15px;
         margin-right: 15px;
@@ -124,9 +124,9 @@
         color: white;
         font-weight: lighter;
         font-style: italic;
-      }
+    }
       
-      .quote1::before { 
+    .quote1::before{ 
         content: open-quote;
         font-weight: bold;
         font-size: 3rem;
@@ -136,9 +136,9 @@
         position:absolute;
         margin-left: -1rem;
         top: -1rem;
-      } 
+    } 
       
-      .quote1::after { 
+    .quote1::after{ 
         content: close-quote;
         font-weight: bold;
         font-size: 3rem;
@@ -148,9 +148,9 @@
         position:absolute;
         margin-left: -1rem;
         top: 5.5rem;
-      }
+    }
 
-    .quote2 {
+    .quote2{
         position: relative;
         top:40px;
         left:-15px;
