@@ -7,6 +7,16 @@
         text-shadow: 0px 5px 1px rgb(189, 189, 189);
     
     }
+
+    li > a{
+        text-decoration: none;
+        color: black;
+    }
+
+    li > a:hover{
+        text-decoration: underline;
+        text-decoration-color: rgb(210, 0, 162);
+    }
     
     .to_the_moon{
         position: absolute;
@@ -15,7 +25,7 @@
         height: 340px;
         width: 340px;
         border: 4px solid black;
-        font-family: Rubik;
+        font-family: 'Rubik', sans-serif;
         background-color: rgba(255, 255, 255, 0.5);
     }
     
@@ -27,7 +37,7 @@
         font-size: 5rem;
         line-height: 1.25;
         text-transform: uppercase;
-        font-family: Rubik;
+        font-family: 'Rubik', sans-serif;
         font-weight: 700;
         padding-left: 5px;
         padding-right: 5px;
@@ -54,9 +64,9 @@
         gap: 200px;        
         min-height: 100vh;
         background-image: url("../images/space_bg_desktop.jpg");
-        Background-size: cover; 
-        Background-position: center;
-        font-family: Rubik;
+        background-size: cover; 
+        background-position: center;
+        font-family: 'Rubik', sans-serif;
         color: white;
         padding-top:45px;
         padding-left: 60px;
@@ -157,8 +167,8 @@
         font-style: italic;
         font-weight: lighter;
         opacity: 0.3;
-        background: #D100A1;
-        background: linear-gradient(to bottom right, #D100A1 0%, #BABABA 50%, #D100A1 100%);
+        background: #d200a2;
+        background: linear-gradient(to bottom right, #d200a2 0%, #BABABA 50%, #d200a2 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
 
@@ -208,8 +218,8 @@
     }
 
     .read_more_about_major_tom{
-        color: rgb(209, 0, 161);
-        text-decoration-color: rgb(209, 0, 161);
+        color: rgb(210, 0, 162);
+        text-decoration-color: rgb(210, 0, 162);
     }
 
     footer{
@@ -230,8 +240,8 @@
         margin:0;
         margin-left: 25px;
         padding: 5px;
-        color: rgb(209, 0, 161);
-        text-shadow: 0px 0px 10px rgb(209, 0, 161);
+        color: rgb(210, 0, 162);
+        text-shadow: 0px 0px 10px rgb(210, 0, 162);
     }
     
     .accept_cookies{
@@ -249,7 +259,7 @@
         transition-duration: 0.4s;
     }
       
-      .accept_cookies:hover {
+    .accept_cookies:hover {
         background-color: #aeaae4;
         color: rgb(0, 0, 0);
     }
