@@ -63,10 +63,6 @@
         padding-right: 60px;
     }
 
-    .arrow{
-        display: none;
-    }
-
     .left_side_desktop, .right_side_desktop{
         width: 50%;
     }
@@ -208,5 +204,38 @@
     .read_more_about_major_tom{
         color: rgb(209, 0, 161);
         text-decoration-color: rgb(209, 0, 161);
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        bottom:0;
+        width: 100vw;
+        background-color: rgba(3, 8, 37, 0.9)
+    }
+    
+    .cookie_text{
+        margin:0;
+        margin-left: 10px;
+        padding: 5px;
+        color: rgb(209, 0, 161);
+        text-shadow: 0px 0px 10px rgb(209, 0, 161);
+    }
+    
+    .accept_cookies{
+        position: relative;
+        margin-right: 35px;
+        display: flex;
+        justify-content: baseline;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .cookie_text_br{
+        display: none;
     }
 }
