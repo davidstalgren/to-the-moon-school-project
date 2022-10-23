@@ -47,7 +47,6 @@ li{
     font-size: 3rem;
     font-weight:700;
     text-shadow: 0px 5px 1px rgb(189, 189, 189);
-
 }
 
 .menu_text{
@@ -101,7 +100,7 @@ li{
     display: none;
 }
 
-button{
+.button_menu{
     position: fixed;
     top: 20px;
     right: 20px;
@@ -263,11 +262,13 @@ h2{
 }
 
 .text_major_tom_p1{
-    display:inline;
+    display:block;
+    margin: 0px 0px 5px 0px;
 }
 
 .text_major_tom_p2{
-    display:inline;
+    display:block;
+    margin: 0px 0px 5px 0px;
 }
 
 .quote1{
@@ -315,24 +316,28 @@ h2{
 }
 
 .text_tin_can_p1{    
-    display:inline;
-    padding-bottom:20px;
+    display:block;
+    margin-bottom: 5px;
 }
 
 .text_tin_can_p2{    
-    display:inline;
+    display:block;
+    margin: 0px 0px 5px 0px;
 }
 
 .text_tin_can_p3{    
-    display:inline;
+    display:block;
+    margin: 0px 0px 5px 0px;
 }
 
 .text_tin_can_p4{    
-    display:inline;
+    display:block;
+    margin: 0px 0px 5px 0px;
 }
 
 .text_tin_can_p5{    
-    display:inline;
+    display:block;
+    margin: 0px 0px 5px 0px;
 }
 
 .picture_major_tom{
@@ -358,18 +363,30 @@ footer{
 }
 
 .cookie_text{
+    font-size: 1rem;
     margin:0;
-    margin-left: 10px;
+    margin-left: 25px;
     padding: 5px;
     color: rgb(209, 0, 161);
     text-shadow: 0px 0px 10px rgb(209, 0, 161);
 }
 
 .accept_cookies{
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
     position: relative;
     margin-right: 35px;
+    padding: 10px 10px;
     display: flex;
-    justify-content: baseline;
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 35, 156);
     text-transform: uppercase;
+    transition-duration: 0.4s;
+}
+  
+  .accept_cookies:hover {
+    background-color: #aeaae4;
+    color: rgb(0, 0, 0);
 }
