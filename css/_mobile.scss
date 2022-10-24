@@ -372,6 +372,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    z-index:1;
     bottom:0;
     width: 100vw;
     background-color: rgba(3, 8, 37, 0.9)
@@ -391,12 +392,12 @@ footer{
 
 .accept_cookies{
     border: none;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     text-align: center;
     position: relative;
     margin-bottom: 5px;
-    padding: 7px 7px;
+    padding: 10px 7px;
     display: flex;
     color: rgb(255, 255, 255);
     background-color: rgb(35, 35, 156);
