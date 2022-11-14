@@ -7,3 +7,8 @@ I `assets`-mappen hittar du briefen från kunden (beskrivningen på vad du ska g
 I `screenshots`-mappen lägger du skärmdumpar på din sajt, när du är klar och har testat och färdigställt den så att den fungerar i alla webbläsare.
 
 I `validation-reports`-mappen lägger du PDF:er på dina valideringsrapporter på HTML och CSS.
+
+
+
+My first project in school for my Frontend development studies.
+Turned out quite alright.
